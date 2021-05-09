@@ -44,4 +44,5 @@ jobs:
         no-fail-on-empty-changeset: "1"
         no-execute-changeset: "1"
         parameter-overrides: >-
-          EnvironmentName=deploy-WA-Web-App
+          EnvironmentName=deploy-WA-Web-App,
+          VpcCIDR=10.0.0.0/16
