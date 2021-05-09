@@ -10,7 +10,7 @@ jobs:
   
   review:
     name: Review ChangeSet
-    if: contains( github.base_ref, 'develop') || contains( github.base_ref, 'main')
+    if: contains( github.base_ref, 'develop') || contains( github.base_ref, 'master')
     runs-on: ubuntu-latest
     outputs:
       env-name: ${{ steps.env-name.outputs.environment }}
