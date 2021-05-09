@@ -12,27 +12,27 @@ Parameters:
   VpcCIDR:
     Description: CIDR block for the VPC
     Type: String
-    Default: "10.0.0.0./16"
+    Default: "10.0.0.0/16"
   
   PublicSubnet1CIDR:
     Description: CIDR block for public subnet in 1st avaliablity zone
     Type: String
-    Default: "10.0.1.0./24"
+    Default: "10.0.1.0/24"
   
   PublicSubnet2CIDR:
     Description: CIDR block for public subnet in 2nd avaliablity zone
     Type: String
-    Default: "10.0.2.0./24"
+    Default: "10.0.2.0/24"
 
   PrivateSubnet1CIDR:
     Description: CIDR block for private subnet in 1st avaliablity zone
     Type: String
-    Default: "10.0.3.0./24"
+    Default: "10.0.3.0/24"
 
   PrivateSubnet2CIDR:
     Description: CIDR block for private subnet in 2nd avaliablity zone
     Type: String
-    Default: "10.0.4.0./24"
+    Default: "10.0.4.0/24"
 
 Resources:
   VPC:
