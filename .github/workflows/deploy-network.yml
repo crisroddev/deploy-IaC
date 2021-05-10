@@ -39,14 +39,14 @@ jobs:
       id: service-review
       uses: aws-actions/aws-cloudformation-github-deploy@v1
       with:
-        name: "Networking"
+        name: "Networking 2"
         template: ./networking/networking.yaml
         no-fail-on-empty-changeset: "1"
         no-execute-changeset: "1"
         parameter-overrides: >-
           EnvironmentName=deploy-WA-Web-App,
-          VpcCIDR=10.0.0.1/16,
-          PublicSubnet1CIDR=10.0.1.1/24,
-          PublicSubnet2CIDR=10.0.2.1/24,
-          PrivateSubnet1CIDR=10.0.3.1/24,
-          PrivateSubnet2CIDR=10.0.4.1/24
+          VpcCIDR=10.0.0.0/16,
+          PublicSubnet1CIDR=10.0.1.0/24,
+          PublicSubnet2CIDR=10.0.2.0/24,
+          PrivateSubnet1CIDR=10.0.3.0/24,
+          PrivateSubnet2CIDR=10.0.4.0/24
