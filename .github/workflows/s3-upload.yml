@@ -29,9 +29,9 @@ jobs:
       run: |
         aws s3 rm s3://s3-hawebapp-cris/ --recursive
    
-    #- name: Copy files
-    #  run: |
-    #    aws s3 cp udacity-tamplate.zip s3://s3-hawebapp-cris/
+    - name: Copy files
+      run: |
+        aws s3 cp udacity-tamplate.zip s3://s3-hawebapp-cris/
        
 
 
