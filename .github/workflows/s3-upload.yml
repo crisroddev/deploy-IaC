@@ -21,8 +21,7 @@ jobs:
 
     - name: Upload files to S3 with AWS CLI
       run: |
-        ls
-        aws s3 udacity-template.zip s3://${{ secrets.AWS_S3_BUCKET }} --delete 
+        aws s3 sync udacity-tamplate.zip s3://${{ secrets.AWS_S3_BUCKET }} --delete 
 
 
 
