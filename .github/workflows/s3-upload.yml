@@ -19,7 +19,7 @@ jobs:
         with:
           args: --acl public-read
         env:
-          FILE: ./udacity-template.zip
+          FILE: udacity-template.zip
           AWS_REGION: 'us-west-2'
           S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           S3_KEY: ${{ secrets.S3_KEY }}
