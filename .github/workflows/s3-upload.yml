@@ -9,7 +9,7 @@ on:
     - '**/*.md'
 jobs:
   deploy:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
     - name: Upload file to bucket
