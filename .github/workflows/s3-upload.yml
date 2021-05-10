@@ -19,9 +19,13 @@ jobs:
         aws-secret-access-key: ${{ secrets.CFM_AWS_SECRET_ACCESS_KEY }}
         aws-region: us-west-2 # replace this with your aws-region
 
-    - name: Upload files to S3 with AWS CLI
+    - name: List
       run: |
-       aws s3 ls s3://${{ secrets.AWS_S3_BUCKET }}
+       aws s3 ls
+    - name: Copy files
+      run: |
+        aws s3 cp udacity-template.zip s3://s3-hawebapp-cris/
+       
 
 
 
