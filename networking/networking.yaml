@@ -1,5 +1,5 @@
 Description: >
-  Test CI/CD
+  Test CI/CD IAC
 
 Parameters:
   EnvironmentName:
