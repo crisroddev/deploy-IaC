@@ -1,8 +1,5 @@
 Description: >
-  Udacity DevOps nanodegree
-  Project: Deploy a high-availability web app using CloudFormation
-  Network - Infrastructure
-  By: Cristian Rodriguez
+  Test CI/CD
 
 Parameters:
   EnvironmentName:
